@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link type="image/x-icon" rel="icon" href="/FrontEnd/qrcode-solid-full.svg">
+    <title>QR Code Generator</title>
     <style>
         body{
             background-color: rgb(18, 21, 34);
+            font-family: 'Montserrat';
+        }
+        input,button,textarea{
+            font-family:inherit;
+            font-size:inherit;
         }
         .generator{
             background-color: rgb(32, 36, 49);
@@ -41,9 +50,12 @@
             background-color: rgb(30,84, 207);
             color: white;
         }
-        #download{
-            margin-left: 9rem;
-            color: rgb(163, 162, 249);
+        #button{
+            text-align:center;
+        }
+        button a{
+            color:white;
+            text-decoration:none;
         }
         .image{
             display:flex;
@@ -61,7 +73,9 @@
             <div class="image">
                 <img src="qr_img.png" id="image" alt="image of the url">
             </div>
-            <a href="#" id="download">Download QR</a>
+            <button id="button">
+                <a href="#">Download QR</a>
+            </button>
         </div>
     </form>
 </body>
